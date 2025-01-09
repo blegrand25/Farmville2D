@@ -69,16 +69,14 @@ public class MyFarm {
 
     public void numberOfTomatoPlots() {
         int total = 0;
-        int tplots;
         for (int a = 0; a < grid.length; a++){
             for (int b = 0; b < grid[0].length; b++){
                 if (grid[a][b].plantName.equals("tomato")){
-                    total =;
+                    total = total + 1;
                 }
             }
         }
-        tplots = total;
-        System.out.println("number of tomato plots: " + tplots);
+        System.out.println("number of tomato plots: " + total);
 
 
         // how many plots have tomatos on them?
@@ -98,6 +96,9 @@ public class MyFarm {
 
     public void plantWithMaxNumber() {
         // which plant type has the most total plants?
+        // double for loop to go through all the plots
+        // at each plot add the numeer of plants to the appropriate slot in the array
+
 
     }
 
